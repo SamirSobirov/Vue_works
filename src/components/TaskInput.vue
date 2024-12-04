@@ -1,8 +1,8 @@
 <template>
     <div class="task-input my-list">
-        <input v-model="title" placeholder="Title" type="text">  
-        <input v-model="description" placeholder="Description" type="text">  
-        <button @click="onAddTask">Add task</button>
+        <input class="bg-gray-800" v-model="title" placeholder="Title" type="text">  
+        <input class="bg-gray-800" v-model="description" placeholder="Description" type="text">  
+        <button class="bg-gray-600" @click="onAddTask">Add task</button>
     </div>
 </template>
 
