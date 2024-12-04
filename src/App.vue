@@ -3,9 +3,11 @@
 </script>
 
 <template>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
+  <div class="items-center justify-center text-center pt-[25%]">
+  <h1 class=" text-5xl font-bold underline">
+    Hello Type Script and Vue!
   </h1>
+</div>
 </template>
 
 <style >
