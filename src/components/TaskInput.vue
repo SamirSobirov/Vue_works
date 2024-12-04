@@ -6,8 +6,6 @@
     </div>
 </template>
 
-
-
 <script>
 import { ref } from 'vue'
 
@@ -19,7 +17,7 @@ export default {
 
         const onAddTask = () => {
             if (title.value === '' || description.value === '') {
-                alert('Fill some info please!');
+                alert('Fill some fields please!');
                 return;
             }
             emit('onAddTask', { title: title.value, description: description.value });
@@ -32,7 +30,6 @@ export default {
         };
     }
 };
-
 </script>
 
 <style scoped>
