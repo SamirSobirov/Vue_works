@@ -14,6 +14,7 @@
 
 <script>
 export default {
+  emits: ['onDone', 'onRemove'],
   props: {
     model: {
       required: true,
