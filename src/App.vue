@@ -26,7 +26,7 @@ import {ref} from 'vue'
       const taskList = ref([{id: 0, title: 'Creative video', description: 'And upload on YT', status: false}])
 
       const addTask = ({title, description}) => {
-        taskList.value = [...taskList.value, {id: taskList.value.length + 1, title, description, status: false}]
+        taskList.value = [...taskList.value, {id: taskList.value[taskList.value.length - 1].id + 1, title, description, status: false}]
       }
 
       const setDoneTask = (id) => {
@@ -40,7 +40,7 @@ import {ref} from 'vue'
       const removeTask = (id) => {
         taskList.value = taskList.value.filter(x => x.id !== id);
       }
-      
+
 
       return {
         taskList,
