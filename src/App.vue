@@ -40,6 +40,7 @@ import {ref} from 'vue'
       const removeTask = (id) => {
         taskList.value = taskList.value.filter(x => x.id !== id);
       }
+      
 
       return {
         taskList,
