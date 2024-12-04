@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 * {
   font-family: "JetBrains Mono" , monospace;
   margin: 0;
@@ -11,12 +9,10 @@
 
 }
 
-
 main {
   max-width: 450px;
   margin: 0 auto;
 }
-
 
 
 button, input, .my-style {
@@ -31,4 +27,3 @@ button, input, .my-style {
   grid-template-columns: 100%;
   grid-gap: 5px;
 }
- 
