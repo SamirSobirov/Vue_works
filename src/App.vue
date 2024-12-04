@@ -1,18 +1,25 @@
-<script setup lang="ts">
-
-</script>
 
 <template>
-  <div class="items-center justify-center text-center pt-[25%]">
-  <h1 class=" text-5xl font-bold underline">
-    Hello Type Script and Vue!
-  </h1>
-</div>
+  <main>
+    <TaskInput></TaskInput>
+    <TaskCard> </TaskCard>
+  </main>
+
+
 </template>
 
 
 
+<script>
+import TaskInput from './components/TaskInput.vue';
+import TaskCard from './components/TaskCard.vue';
 
-<style>
+  export default {
+    name: 'App',
+    components: {
+      TaskCard,
+      TaskInput
+    }
+  }
+</script>
 
-</style>
