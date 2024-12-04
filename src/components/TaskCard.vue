@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  emits: ['onDone', 'onRemove'],
+  emits: ["onDone", "onRemove"],
   props: {
     model: {
       required: true,
@@ -28,25 +28,25 @@ export default {
   },
   setup(props, { emit }) {
     const emitOnDone = () => {
-        emit('OneDone')
-    }
+      emit("OneDone");
+    };
 
     const emitOnRemove = () => {
-        emit('OneRemove')
-    }
+      emit("OneRemove");
+    };
 
     return {
-        emitOnDone,
-        emitOnRemove
-    }
-  }
+      emitOnDone,
+      emitOnRemove,
+    };
+  },
 };
 </script>
 
 <style scoped>
 .task-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 </style>
