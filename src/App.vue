@@ -55,6 +55,8 @@ export default {
       });
     };
 
+
+    
     const removeTask = (id) => {
       taskList.value = taskList.value.filter((x) => x.id !== id);
     };
